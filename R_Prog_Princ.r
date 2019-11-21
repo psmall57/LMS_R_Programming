@@ -44,4 +44,18 @@ while(counter<12) {
  counter<-counter +1
 }  #loop will continue until counter becomes 12 then exit
 
-
+#IF statement in R
+a<-1
+if (a<1) {
+  print("a<1")
+  else if(a>1)
+    else{
+        print ("a == 1")
+}
+    
+ b<-2
+ if(a==0) || (b==2){
+   print("a or b")
+ }
+    
+ 
