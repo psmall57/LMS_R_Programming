@@ -33,3 +33,15 @@ result  #0.625 is returned
 #Call functions and pass variables
 answer <- sqrt(var2)
 
+#while loop
+While(abc) {
+  print("Hello")
+}
+
+counter<- 1
+while(counter<12) {
+  print(counter)
+ counter<-counter +1
+}  #loop will continue until counter becomes 12 then exit
+
+
