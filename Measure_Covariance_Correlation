@@ -1,0 +1,19 @@
+?faithful
+head(faithful) # checks first few records
+e<- faithful$eruptions
+w<- faithful$waiting
+
+plot(e,w)
+#compute covariance
+cov(w,e)
+#can be positive or negative
+
+cor(w,e)
+cor(w,e,method="pearson")
+cor(w,e,method="spearman")
+cor(w,e,method="kendall")
+
+cor(w,e,use="everything")
+?cor # this will show the options in the correlation function
+
+
