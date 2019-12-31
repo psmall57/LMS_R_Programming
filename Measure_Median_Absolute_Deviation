@@ -1,0 +1,12 @@
+?trees #Girth, Height, Volume observations
+g <- trees$Girth
+
+median(g) #12.9
+mad(g) #measuring absolute deviation is MAD
+mean(g)
+mad(g, center=median(g))
+mad(g, center=mean(g))
+
+mad(g, constant=1.4826)
+mad(g,constant=1)
+mad(g,constant=2)
