@@ -1,0 +1,16 @@
+v<- sample(1:100,10)
+var(v)
+sd(v)
+
+v<- sample(1:100,10),NA)
+var(v)
+sd(v) # will return NA
+var(v, na.rm=TRUE)
+sd(v,na.rm=TRUE)
+
+?trees
+var(trees{,2})
+sd(trees[,2])
+
+trees
+
