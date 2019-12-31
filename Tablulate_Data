@@ -1,0 +1,16 @@
+?airquality
+head(airquality)
+
+table(OzHi = Ozone > 80, Month)
+
+table(OzHi = Ozone > 80, Month, useNA="ifany") #shows how many NA values are in the dataset
+
+table(OzHi = Ozone > 80, Month, useNA="always") #always option will force a row even if there are no missing data points
+
+library(MASS)
+attach(survey)
+head(survey)
+
+table(Smoke)
+table(Sex,Smoke) #how many male and female smoke?
+table(Sex,Smoke,useNA="ifany")
