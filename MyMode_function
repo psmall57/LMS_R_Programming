@@ -1,0 +1,11 @@
+#Custom function used to compute mode.
+MyMode <- function(x) {
+  sort(table(x), decreasing=TRUE)[1]
+ }
+ 
+ #Mode function that came up with online in a search
+ AltMode <- function(x)  {
+  ux <- unique(x)
+  ux <-[which.max(tabulate(match(x, ux)))]
+  }
+  
