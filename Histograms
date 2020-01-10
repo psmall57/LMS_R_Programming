@@ -1,0 +1,22 @@
+?airquality
+hist(airquality$Temp) #6 variables in this dataset
+hist(airquality$wind)
+
+
+#Create script
+colors <- c("red", "yellow","blue","green")
+hist(airquality$wind,
+     freq=F,
+     right=F,
+     col=colors,
+     #add more bins
+     breaks=16,
+     main="New York Wind Speed", #label variable
+     xlab="Wind Speed")
+     
+     lines(density(airquality$wind, bw=0.6), #bw is bandwidth
+          col="black",
+          lwd=3)  #shows line on top
+
+
+
