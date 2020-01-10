@@ -1,0 +1,7 @@
+browsers <- c("Chrome", "Internet Explorer", "Firefox",
+              "Safari", "Opera", "Other")
+share <- c(38, 19, 16, 8, 16, 3,2,6)
+colors <- c("red","yellow","blue","green", "orange","cyan")
+pie(share, browsers, col=colors) #numeric values are first, then the labels (browsers).
+pie(share, browsers, col=colors, radius=1.2) #makes the pie chart bigger
+pie(share, browsers, col=colors, radius=1.2, clockwise=true) #changes direction of data 
