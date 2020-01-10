@@ -1,0 +1,7 @@
+browsers <- c("Chrome", "Internet Explorer", "Firefox",
+              "Safari", "Opera", "Other")
+share <- c(38, 19, 16, 8, 16, 3,2,6)
+barplot(share, names.arg = browsers, col=colors)
+barplot(share, names.arg = browsers, col=colors, ylim=c(0,40)) #raises the y limit value
+barplot(share, names.arg = browsers, col=colors, xlim=c(0,40), horiz=TRUE) #horizontal bar chart, xlimit will ensure we see all the data
+#?barplot shows all options available
