@@ -1,0 +1,28 @@
+jpeg("AirPassengers.jpg")
+plot(AirPassengers) #switch back to plotting device to plot to a file
+dev.off() #dev.off() any further plots do not go in this file
+
+pdf("AirPassengers.jpg")
+plot(AirPassengers)
+dev.off()
+
+win.metafile("AirPassengers.wmf")
+plot(AirPassengers)
+dev.off()
+
+png("AirPassengers.jpg")
+plot(AirPassengers)
+dev.off()
+
+bmp("AirPassengers.bmp")
+plot(AirPassengers)
+dev.off()
+
+postscript("AirPassengers.ps")
+plot(AirPassengers)
+dev.off()
+
+setEPS()
+postscript("AirPassengers.eps") #encapsulated postscript
+plot(AirPassengers)
+dev.off()
