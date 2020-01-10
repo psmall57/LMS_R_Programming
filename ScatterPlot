@@ -1,0 +1,12 @@
+?airquality
+x = airquality$Ozone
+y = airquality$wind
+plot(x,y, xlab="Ozone (ppb)", ylab="Wind Speed" (mph)")
+
+abline(lm(y ~ x))  #add regression line   
+library(ggplot2)
+sp <- ggplot(airquality, aes(x = airquality$Ozone, y=airquality$wind)) #aesthetic mapping is aes
+
+sp + geom_point() #creates plot,ignore warning
+sp + geom_point(shape=1)
+sp + geom_point(shape=1) + geom_smooth(method=lm) #adds regression line using geom_smooth() and shaded region
