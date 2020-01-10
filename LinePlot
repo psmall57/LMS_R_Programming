@@ -1,0 +1,9 @@
+v <- sample(1:100, 10)
+
+plot (v)
+plot(v, type="l", col="blue", ylim=c(0,100))
+plot(v, type="b", col="blue", ylim=c(0,100)) #b in type is both
+plot(v, type="o", col="blue", ylim=c(0,100)) #o is overplotting extends line through the center to avoid gaps
+x<- sample(1:100,10)
+lines(x,type="o", col="red") #plots both lines
+title(main="Main Title", col.main="blue") #adds title
