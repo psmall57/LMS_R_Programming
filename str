@@ -1,0 +1,17 @@
+#STR structure function
+str(quote(y ,- x^2 + 1)
+#languate y < x^2 + 1
+str(rnorm)
+str(plot)
+str(iris) #iris is a data frame
+
+
+head(iris) #returns first few values
+summary(iris)  #returns some aggregated data of the IRIS data set
+
+
+library(dplyr)
+glimpse(iris)
+str(iris)
+
+
