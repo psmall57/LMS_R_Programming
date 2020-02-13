@@ -1,0 +1,34 @@
+#eval function
+eval("1 = 1")
+#"1 + 1"
+
+eval(parse(text="1+1"))
+# returns 2. The parse function is needed to evaluate the expression
+
+e <- new.env()
+e$b <- 5
+e$b
+# returns 5
+evalq(y <- b, e)
+e$y
+# returns 5.  evalq is quoted environment
+
+x <- 10
+b <- 10
+eval(y <- x + b)
+#20  global y variable
+
+e$y
+5
+#different environment
+
+ll <- list(x=2, b=6)
+evalq(y <- x^2 + b, ll)
+$x
+#returns 2
+
+evalq(x^2 + b, ll)
+ll returns values of x and b
+
+evalq(x^2 + b, ll
+# returns 10.  #the list is immutable after because we are not assigning new variables so it returns the result
